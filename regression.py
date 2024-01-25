@@ -1,7 +1,6 @@
 import torch
 from torch import nn
-import numpy as np
-
+import math as mt
 def create_linear_regression_model(input_size, output_size):
     """
     Create a linear regression model with the given input and output sizes.
@@ -27,7 +26,7 @@ def fit_regression_model(X, y):
     """
     Train the model for the given number of epochs.
     """
-    learning_rate = (np.pi*np.e)/10000  # May need to be adjusted
+    learning_rate = (mt.pi*mt.e)/10000  # May need to be adjusted
     num_epochs = 1000     # Increased number of epochs
 
 
